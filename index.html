@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Love Poem</h1>
+    <p><a href="https://www.instagram.com/rmdrk/" target="_blank">R.M Drake</a></p>
+    <div class="playme">
+        <img src="images/play.png" alt="play.png" id="icon">
+    </div>
+</header>
+
+<section class="normal">
+    <p>
+        i am thinking about you <br>
+        right now and i am sending <br>
+        you love, real love.
+    </p>
+</section>
+
+<section class="imagem" id="img01">
+    <p>
+        the kind that warms the skin <br>
+        and waits all night to be held <br>
+        by the moon.
+    </p>
+</section>
+
+<section class="normal">
+    <p>
+        the kind that reminds you <br>
+        of how beautiful you are under <br>
+        the day and the night and <br>
+        between what is left.
+    </p>
+</section>
+
+<section class="imagem" id="img02">
+    <p>
+        the kind that does not <br>
+        wake the next day alone.
+    </p>
+</section>
+
+<section class="normal">
+    <p>
+        this is me thinking about you <br>
+        tonight. this is me sending real<br>
+        love, all that there is to receive.<br>
+    </p>
+    <br>
+        <strong>
+            <p>the only gift worth sending.</p>
+        </strong>
+</section>
+
+
+<footer>
+    <p>Website developed by <a href="https://github.com/luizaluz29" target="_blank">Luiza Luz</a></p>
+</footer>
+
+<audio id="worksong">
+    <source src="midia/worksong.mp3" type="audio/mp3">
+</audio>
+<script>
+    var worksong = document.getElementById("worksong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function () {
+        if(worksong.paused){
+            worksong.play();
+            icon.src="images/pause.png";
+        }else{
+            worksong.pause();
+            icon.src="images/play.png";
+        }  
+    }
+</script>
+</body>
+</html>
